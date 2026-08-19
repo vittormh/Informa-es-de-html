@@ -222,12 +222,85 @@ target="_blank">
     </table>
     <hr>
     <br>
-    <h1>Button</h1> <!--Como aumentar a letra, adicionar cor no fundo e na letra do botão e como alterar a borda-->
+    <h1>Button</h1> <!--Como aumentar a letra, adicionar cor no fundo e na letra do botão, como alterar a borda e como colocar um link de acesso aravés desse botão-->
     <a href="https://www.youtube.com/"
     target="_blank">
     <button style="font-size:25px; background-color:red; color:violet; border-radius: 25px;">
         Click me
     </button>
     </a>
-    </body>
+    <hr>
+    <br>
+    <h1>Form</h1>
+ <!--Como criar um formulário e como adicionar campos de entrada, botões e outros elementos-->
+ <!--POST (dados confidenciais) GET (dados não confidenciais)-->
+ <!--INDEX.PHP (arquivo no qual os dados são enviados)-->
+ <!-- for em label e id em input serve para associar o label ao input-->
+ <!--required apos o id serve para tornar o campo obrigatório-->
+ <!--minlength define o mínimo de caracteres que o usuário deve digitar-->
+ <!--maxlength define o máximo de caracteres que o usuário pode digitar-->
+ <!-- submit envia os dados do formulário e reset limpa o formulário-->
+ <!--placeholder define o texto que aparece dentro do campo de entrada antes do usuário digitar-->
+ <!--pattern define o padrão que o usuário deve seguir ex:"[0-9]{2} [0-9]{5}-[0-9]{4}" nesse caso o sistema só aceita os priemiros dois número sendo de 0 até 9 depois um backspace( ) seguido de 5 números de 0 até 9 depois dash(-) seguido de 4 números de 0 até 9-->
+ <!--value define o valor inicial do campo de entrada e min="0" max="99" definem o máximo e mínimo valores permitidos-->
+    <form action="index.php" method="post">
+
+        <label for="username">username:</label>
+        <input type="username" id="username" placeholder="Enter username" minlength="8" maxlength="8" required>
+    <br>
+        <label for="password">password:</label>
+        <input type="password" id="password" placeholder="Enter password" minlength="8" maxlength="8" required>
+    <br>
+        <label for="e-mail">e-mail:</label>
+        <input type="e-mail" id="e-mail" placeholder="exemple@exemple.com" minlength="5" maxlength="50" required>
+    <br>
+        <label for="phone">phone:</label>
+        <input type="phone" id="phone" placeholder="(12) 34567-8901" minlength="5" maxlength="15" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+    <br>
+        <label for="date">birthday:</label>
+        <input type="date" id="date">
+    <br>
+        <label for="quantity">quantity:</label>
+        <input type="number" id="quantity" min="0" max="99" value="1">
+    <br>
+
+        <label for="title">titel:</label>
+        <select id="title"><!--cria uma aba de seleção de opções-->
+            <option value="mr">Mr</option>
+            <option value="mrs">Mrs</option>
+            <option value="dra">Dra</option>
+            <option value="dr">Dr</option> 
+        </select>
+    <br>
+        <label for="titel">titel</label>
+
+        <label for="mr">Mr</label>                                       <!--colocar name nos inputs serve para agrupar os radio buttons fazendo com que seja possível selecionar apenas uma opção-->
+        <input type="radio" id="mr" name="titel" value="mr" name="titel">
+        <label for="mrs">Mrs</label>
+        <input type="radio" id="mrs" name="titel" value="mrs"name=titel>
+        <label for="dra">Dra</label>
+        <input type="radio" id="dra" name="titel" value="dra" name="titel">
+    <br>
+        <label for="payment method">payment method:</label>
+        <select id="payment method">
+            <option value="credit card">credit card</option>
+            <option value="debit card">debit card</option>
+            <option value="pix">pix</option>
+        </select>
+    <br>
+        <label for="subscribe">subscribe:</label>
+        <input type="checkbox" id="checkbox">
+    <br>
+        <label for="message">message:</label>              <!--rows serve para ajustar a altura do textarea e cols para ajustar a largura do textarea-->
+        <textarea id="message" rows="1" cols="20" placeholder="Enter your message"></textarea>
+    <br>
+        <label for="file">file</label>
+        <input type="file" id="file" accept="image/png, image/jpeg">
+    <br>
+
+    <input type="submit">
+    <input type="reset">
+        
+    </form>
+</body>
 </html>
