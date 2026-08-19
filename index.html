@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>My first website</title><!--título da página-->
+<link rel="icon"type="image/png" href="favicoin/favicon-terminal-98.png"> <!-- ícone da página -->
+    </head>
+    <body>
+        <h1>This is an h1 heading</h1>
+        <h2>This an h2 heading</h2>
+        <h3> this an h3 heading </h3>
+        <h4> this an h4 heading </h4>
+        <h5> this an h5 heading </h5>
+        <hr>
+        <P> 
+            Some text goes here 
+        </P>
+        <br>
+        <P>
+            Some more text goes here
+        </P>
+<pre> 
+    Lorem ipsum dolor sit amet, consectetur 
+    adipiscing elit. Sed do eiusmod tempor 
+    incididunt ut labore et dolore magna aliqua. 
+
+    Ut enim ad minim veniam, quis nostrud exercitation 
+    ullamco laboris nisi ut aliquip ex ea commodo 
+    consequat. Duis aute irure dolor in reprehenderit 
+    in voluptate velit esse cillum dolore eu fugiat 
+    nulla pariatur. 
+
+    Excepteur sint occaecat cupidatat non proident, 
+    sunt in culpa qui officia deserunt mollit anim 
+    id est laborum.
+</pre>
+
+<!-- Esse é um comentário. Meu primeiro site -->
+
+<a href="https://www.google.com/?hl=pt_BR"
+target="_blank"
+title="goes to google">
+<!-- <a href="algum link aqui" faz com que seja criado um hyperlink -->
+<!-- target faz com que seja aberto o link numa aba diferente-->
+<!-- title mostra uma dica quando o mouse passa sobre o link -->
+click me <!-- aqui é colocado o nome do hyperlink que aparece no site-->
+</a>
+
+<br>
+
+<a href="http://127.0.0.1:5500/lyrics.html"
+target="_blank"
+title="goes to lyrics">
+songs lyrics
+</a>
+
+<hr>
+
+<br>
+<br>
+<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSBpDkJdCfRczFKGZvtznKChdJqGQrFFXkDDLsrDvZrwwcXWVTBxTfwrVHbMPpHhnNppjTtB"
+target="_blank"
+title="send an e-mail to vittor hagge">
+    e-mail me
+</a>
+<hr>
+<br>
+
+<h3>Imagem de nossa senhora</h3>
+<a href="https://pt.wikipedia.org/wiki/Maria_(m%C3%A3e_de_Jesus)"
+target="_blank"
+title="goes to wikipedia">
+     <img src="images/mary.jpg" 
+
+         height="300"
+         width="200"
+         alt="this is an image of bless mary"> 
+         <!-- <img src="link da imagem" faaz adicionar uma imagem ao site-->
+         <!-- height e width definem a altura e largura da imagem --> 
+         <!-- alt="descrição da imagem" serve para pessoas que utilizam leitor de tela-->
+</a>
+<!-- adicionando um comando de hyperlink entre um comando de imagem ao clicar na imagem a pessoa é redirecionada ao link colocado-->
+  <!-- dá pra adicionar um gif também utilizando o mesmo comando de img src também.-->
+   <!-- caso a imagem esteja dentro de uma pasta é necessário colocar <img src="nome da pasta seguido do /nome da imagem.png ou jpg ou qualquer outro"> -->
+ <h4>Maria mãe de Deus</h4>
+<hr>
+<h3>
+    Aqui terão dois gifs com áudio
+</h3>
+<br>
+<img src="images/carro.jpeg">
+<audio controls autoplay muted loop>
+    <source src="audio/Car Drive By.mp3" type="audio/mpeg"> <!-- é feito esse código de type para quando o site não suporta a fonte do áudio aí é transformado em wav que suporta.-->
+    <source src="audio/Car Drive By.wav" type="audio/wav">
+</audio>
+<hr>
+<br>
+<img src="images/fogueira.jpg">
+<audio controls autoplay muted>
+    <source src="audio/Daytime Forest Bonfire.mp3" type="audio/mpeg">
+    <source src="audio/Daytime Forest Bonfire.wav" type="audio/wav">
+</audio>
+<!-- para colocar um áudio no site devem ser utilizados os comandos acima-->
+ <!-- para deixar o som tocando mutado ou sem estar mutado automaticamente quando entrarem no site deve ser adicionado "autoplay muted ou sem o muted" após controls.-->
+  <!-- para deixar a musica em loop, deve adicionar loop após controls-->
+<a href="https://www.webmotors.com.br/carros/sp-campinas?tipoveiculo=carros&estadocidade=S%C3%A3o%20Paulo-campinas&page=1"
+target="_blank">
+  <video controls width="320" height="240" autoplay muted loop>
+    <source src="video/14035-254146872_medium.mp4" type="video/mp4">
+    <source src="video/14035-254146872_medium.webm" type="video/webm"> <!-- para que essa versão alternativa do video funcionque caso a versao mp4 nao funcione é necessário colcoar uma versão webm do vídeo na mesma pasta do outro video-->
+  </video>
+  <!-- para colocar um vídeo no site devem ser utilizados os comandos acima-->
+   <!-- usei os mesmo comandos no de áudio para deixar o video em loop com som mutado-->
+</a>
+<hr>
+<br>
+<br>
+<!--formas de texto-->
+<p>This is a normal paragraph.</p>
+<p>This is a <b>bold</b> paragraph.</p><!--negrito-->
+<p>This is a <i>italic</i> paragraph.</p><!--itálico-->
+<p>This is a <u>underlined</u> paragraph.</p><!--sublinhado-->
+<p>This is a  <del>deleted</del>  paragraph.</p><!--deletado/riscado-->
+<p>This is a <big>big</big> paragraph.</p><!--grande-->
+<p>This is a <small>small</small> paragraph.</p><!--pequeno-->
+<p>This is a <sub>subscript</sub> paragraph.</p><!--subscrito-->
+<p>This is a <tt>typewriter</tt> paragraph.</p><!--máquina de escrever-->
+<p>This is a  <mark>highlighted</mark>  paragraph.</p><!--destacado-->
+<hr>
+<br>
+<!--formas de texto com cores-->
+<!--usando span + comando css o fundo da cor da frase pode ser alterado -->
+<!-- usando div + comando css o fundo da linha interia irá ser alterado-->
+ <p><span style="background-color: red;">This is a span phrase</span></p>
+    <p><div style="background-color: aqua;">This is a div phrase</div></p>
+    <h1><span style="background-color: yellow;">This is a span title</span></h1>
+    <h1><div style="background-color: blue;">This is a div title</div></h1>
+    <pre>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+        <span style="background-color: lightgray;"> do eiusmod tempor incididunt ut</span>
+
+        <div style="background-color:cornsilk;">        et dolore magna aliqua.</div>
+    </pre>
+    </body>
+</html>
